@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Details</title>
+    <link rel="stylesheet" href="css/ibps.css">
+</head>
+<body>
+    <nav class="blank-navbar">
+        <ul>
+            <li>
+                <img src="images/pngegg.png" alt="ibps_logo">
+            </li>
+        </ul>
+    </nav>
+
+    <section class="main-1">
+        <form action="#" class="appform-container">
+            <div class="row">
+                <div class="col-30">
+                    <label for="category">Category: <span>*</span> </label>
+                </div>
+                <div class="col-70">
+                    <label for="genral">
+                        <input type="radio" name="category" id="GENERAL" value="general"> GENERAL
+                    </label>
+                    <label for="ews">
+                        <input type="radio" name="category" id="EWS" value="ews"> EWS
+                    </label>
+                    <label for="obc">
+                        <input type="radio" name="category" id="OBC" value="obc"> OBC
+                    </label>
+                    <label for="st">
+                        <input type="radio" name="category" id="ST" value="st"> ST
+                    </label>
+                    <label for="sc">
+                        <input type="radio" name="category" id="SC" value="sc"> SC
+                    </label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-30">
+                    <label for="disability">Are you a person with benchmark disability  of 40% and above?<span> *</span></label>
+                </div>
+                <div class="col-70">
+                    <label for="">
+                        <input type="radio" name="disability" id="yes" value="yes"> YES
+                    </label>
+                    <label for="">
+                        <input type="radio" name="disability" id="no" value="no"> NO
+                    </label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-30">
+                    <label for="">Type of Disability</label>
+                </div>
+                <div class="col-70">
+                    <select name="disability-type" id="disability-type">
+                        <option value="-1">Select</option>
+                        <option value="0">HI</option>
+                        <option value="1">VI</option>
+                        <option value="2">OC/Locomotor disability</option>
+                        <option value="3">ID & Others</option>
+                    </select>
+                    <a href="#">Definition of Disability</a>
+                </div>
+            </div>
+
+            <!--IF WE SELECT ID & OTHERS SHOW FOLLOWING DROPDOWN MENU-->
+            <div class="row">
+                <div class="col-30">
+                    <label for="">Sub-type of Disability for 'ID & Others'</label>
+                </div>
+                <div class="col-70">
+                    <select name="" id="" disabled>
+                        <option value="">Select</option>
+                        <option value="">SLD</option>
+                        <option value="">MI</option>
+                        <option value="">ASD</option>
+                        <option value="">Intellectual Disability</option>
+                        <option value="">Multiple Disibility</option>
+                    </select>
+                </div>
+            </div>
+
+            <!--IF SELECTED OC/LOCOMOTER DISABILITY SHOW FOLLOWING DROPDOWN MENU-->
+            <!--<div class="row">
+                <div class="col-30">
+                    <label for="">Sub-type of Disability</label>
+                </div>
+                <div class="col-70">
+                    <select name="" id="">
+                        <option value="">Select</option>
+                        <option value="">OA</option>
+                        <option value="">OL</option>
+                        <option value="">OAL</option>
+                        <option value="">BL</option>
+                        <option value="">Leprosy Cured Person</option>
+                        <option value="">Cerebral Palsy</option>
+                        <option value="">Dwarfism</option>
+                        <option value="">Muscular Dystrophy</option>
+                        <option value="">Acid Attack Victims</option>
+                    </select>
+                </div>
+            </div>-->
+
+            <!--IF SELECTED HI SHOW FOLLOWING DROPDOWN MENU-->
+            <div class="row">
+                <div class="col-30">
+                    <label for="">Sub-Type of Disability</label>
+                </div>
+                <div class="col-70">
+                    <select name="" id="" disabled>
+                        <option value="">Select</option>
+                        <option value="">Deaf</option>
+                        <option value="">Hard of hearing</option>
+                    </select>
+                </div>
+            </div>
+
+            <!--IF SELECTED VI SHOW FOLLOWING DROPDOWN MENU-->
+            <!--<div class="row">
+                <div class="col-30">
+                    <label for="">Sub-Type of Disability</label>
+                </div>
+                <div class="col-70">
+                    <select name="" id="" disabled>
+                        <option value="">Select</option>
+                        <option value="">Blindness</option>
+                        <option value="">Low Vision</option>
+                    </select>
+                </div>
+            </div>-->
+
+            <div class="row">
+                <div class="col-30">
+                    <label for="">Sub-Type of Multiple Disability</label>
+                </div>
+                <div class="col-70">
+                    <textarea name="" id="" cols="35" rows="5"></textarea>
+                </div>
+            </div>
+            <p>NOTE: To select multiple disabilities please hold the CTRL key and click on the 
+                disabilities but each one from different type i.e. under multiple disabilities a 
+                candidate can select only one sub-type from "OC/Locomotor disability" and only one 
+                sub-type from "VI" and so on.
+            </p>
+
+            <div class="row">
+                <div class="col-70">
+                    <label for="">Are you as per PWBD guidelines eligible to use compensatory time at the time of examination?</label>
+                </div>
+                <div class="col-30">
+                    <label for="">
+                        <input type="radio" name="disability" id="yes" value="yes"> YES
+                    </label>
+                    <label for="">
+                        <input type="radio" name="disability" id="no" value="no"> NO
+                    </label>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-70">
+                    <label for="">Are you suffering from Cerebral palsy and your writing speed is affected?</label>
+                </div>
+                <div class="col-30">
+                    <label for="">
+                        <input type="radio" name="disability" id="yes" value="yes"> YES
+                    </label>
+                    <label for="">
+                        <input type="radio" name="disability" id="no" value="no"> NO
+                    </label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-70">
+                    <label for="">If YES, Do you need compensatory time at the time of examination?</label>
+                </div>
+                <div class="col-30">
+                    <label for="">
+                        <input type="radio" name="disability" id="yes" value="yes"> YES
+                    </label>
+                    <label for="">
+                        <input type="radio" name="disability" id="no" value="no"> NO
+                    </label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-70">
+                    <label for="">Whether your dominanat(writing) hand is affected?</label>
+                </div>
+                <div class="col-30">
+                    <label for="">
+                        <input type="radio" name="disability" id="yes" value="yes"> YES
+                    </label>
+                    <label for="">
+                        <input type="radio" name="disability" id="no" value="no"> NO
+                    </label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-70">
+                    <label for="">If YES, Do you need compensatory time at the time of examination?</label>
+                </div>
+                <div class="col-30">
+                    <label for="">
+                        <input type="radio" name="disability" id="yes" value="yes"> YES
+                    </label>
+                    <label for="">
+                        <input type="radio" name="disability" id="no" value="no"> NO
+                    </label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-70">
+                    <label for="">Are you eligible to use the services of scribe as per Goverment guidelines & Do you wish to use the service of the scribe?</label>
+                </div>
+                <div class="col-30">
+                    <label for="">
+                        <input type="radio" name="disability" id="yes" value="yes"> YES
+                    </label>
+                    <label for="">
+                        <input type="radio" name="disability" id="no" value="no"> NO
+                    </label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-70">
+                    <label for="">Are you child/family member of those whose family membersdied in 1984 riots?<span> *</span></label>
+                </div>
+                <div class="col-30">
+                    <label for="">
+                        <input type="radio" name="disability" id="yes" value="yes"> YES
+                    </label>
+                    <label for="">
+                        <input type="radio" name="disability" id="no" value="no"> NO
+                    </label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-70">
+                    <label for="">Religion to which you belong:<span> *</span></label>
+                </div>
+                <div class="col-30">
+                    <select name="" id="">
+                        <option value="">Select</option>
+                        <option value="">Buddhist</option>
+                        <option value="">Christian</option>
+                        <option value="">Hindu</option>
+                        <option value="">Jain</option>
+                        <option value="">Muslim</option>
+                        <option value="">Sikh</option>
+                        <option value="">Zoroastrian</option>
+                        <option value="">Others</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-70">
+                    <label for="">Do you belong to religious minority community?<span> *</span></label>
+                </div>
+                <div class="col-30">
+                    <label for="">
+                        <input type="radio" name="disability" id="yes" value="yes"> YES
+                    </label>
+                    <label for="">
+                        <input type="radio" name="disability" id="no" value="no"> NO
+                    </label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-70">
+                    <label for="">Are you an Ex-Serviceman?<span> *</span></label>
+                </div>
+                <div class="col-30">
+                    <label for="">
+                        <input type="radio" name="disability" id="yes" value="yes"> YES
+                    </label>
+                    <label for="">
+                        <input type="radio" name="disability" id="no" value="no"> NO
+                    </label>
+                    <a href="#">Definition</a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-70">
+                    <label for="">Are you a disabled Ex-Serviceman (DISXS)?<span> *</span></label>
+                </div>
+                <div class="col-30">
+                    <label for="">
+                        <input type="radio" name="disability" id="yes" value="yes"> YES
+                    </label>
+                    <label for="">
+                        <input type="radio" name="disability" id="no" value="no"> NO
+                    </label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-70">
+                    <label for="">Actual service renderedin defence service which may be counted for qualifying as an Ex-Serviceman(in months)?</label>
+                </div>
+                <div class="col-30">
+                    <input type="text" name="" id="" maxlength="3" minlength="0">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-70">
+                    <label for="">Date of relief from defence service:</label>
+                </div>
+                <div class="col-30">
+                    <input type="date" name="" id="">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-70">
+                    <label for="">Have you joined Governmaent job on the civil side after availing of the benefitsgiven as an Ex-Serviceman?</label>
+                </div>
+                <div class="col-30">
+                    <label for="">
+                        <input type="radio" name="disability" id="yes" value="yes"> YES
+                    </label>
+                    <label for="">
+                        <input type="radio" name="disability" id="no" value="no"> NO
+                    </label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-70">
+                    <label for="">Are you a Dependant of Serviceman killed in Action (DXS)?<span> *</span></label>
+                </div>
+                <div class="col-30">
+                    <label for="">
+                        <input type="radio" name="disability" id="yes" value="yes"> YES
+                    </label>
+                    <label for="">
+                        <input type="radio" name="disability" id="no" value="no"> NO
+                    </label>
+                </div>
+            </div>
+        </form>
+    </section> 
+    <footer id="footer">
+        <p>Fake Website. Designed For Study Purpose.</p>
+    </footer>   
+</body>
+</html>
